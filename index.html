@@ -56,10 +56,24 @@
 
             <div id="pageContent">
                 <div class="articleTitle">Startsida</div>
-                <div class="articleContent"><br/>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer mi. Vivamus sit amet neque vitae sapien bibendum sodales. Curabitur elementum. Duis imperdiet. Donec eleifend porttitor sapien. Praesent leo. Quisque auctor velit sed tellus. Suspendisse potenti. Aenean laoreet imperdiet nunc. Donec commodo suscipit dolor. Aenean nibh. Sed id odio. Aliquam lobortis risus ut felis. Sed vehicula pellentesque quam.</p>
+                <script language="JavaScript"> 
+var i = 0; var path = new Array(); 
 
-                    <p>Vestibulum augue quam, interdum id, congue semper, convallis non, velit. Quisque augue tortor, tristique ac, scelerisque eget, aliquam id, sem. Aenean lorem. Fusce velit nibh, dapibus quis, laoreet nec, porta a, dui. Nullam ac urna. Proin eget elit. Nunc scelerisque venenatis urna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce congue, turpis ut commodo mattis, pede erat fringilla tellus, pulvinar suscipit odio lorem sed pede.</p></div>
+// LIST OF IMAGES 
+path[0] = "hotellrum.jpg"; 
+path[1] = "hotellrum1.jpg"; 
+path[2] = "hotellrum2.jpg"; 
+
+function swapImage() 
+{ 
+document.slide.src = path[i]; 
+if(i < path.length - 1) i++; 
+else i = 0; 
+setTimeout("swapImage()",3000); 
+} 
+window.onload=swapImage; 
+</script> 
+<img height="200" name="slide" src="image_1.gif" width="400" />
             </div>
         </div>
 
