@@ -123,7 +123,7 @@ color: white;
   text-decoration: none;
 }
 
-/* The dropdown container */
+
 .dropdown {
   float: left;
   overflow: hidden;
@@ -208,5 +208,9 @@ p {text-align: left;}
 
 .bild {
     height: 50px;
+    width: 50%;
+}
+
+.mySlides {
     width: 50%;
 }

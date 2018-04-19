@@ -2,9 +2,8 @@
 <html lang="en">
     <head>
         <title>HotellMalmö</title>
-        <meta http-equiv="Content-Type"
-        name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="asubtleorange.css" />
     </head>
     <body>
@@ -56,31 +55,17 @@
 
             <div id="pageContent">
                 <div class="articleTitle">Startsida</div>
-                <script language="JavaScript"> 
-var i = 0; var path = new Array(); 
-
-// LIST OF IMAGES 
-path[0] = "hotellrum.jpg"; 
-path[1] = "hotellrum1.jpg"; 
-path[2] = "hotellrum2.jpg"; 
-
-function swapImage() 
-{ 
-document.slide.src = path[i]; 
-if(i < path.length - 1) i++; 
-else i = 0; 
-setTimeout("swapImage()",3000); 
-} 
-window.onload=swapImage; 
-</script> 
-<img height="200" name="slide" src="image_1.gif" width="400" />
+<img class="mySlides" src="bilder/hotellrum.jpg"  alt='Detta är en bild på ett av våra rum'>
+<img class="mySlides" src="bilder/hotellrum1.jpg" alt='Detta är en bild på ett av våra rum'>
+<img class="mySlides" src="bilder/hotellrum2.jpg" alt='Detta är en bild på ett av våra rum'>
             </div>
         </div>
 
         <footer class="foot">
             <p> Clas Hedman
             Kontakta: <a href="clas.rikard.hedman@gmail.com">
-                clas.rikard.hedman@gmail.com</a>.</p>
+                clas.rikard.hedman@gmail.com</a>.</p>    
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
